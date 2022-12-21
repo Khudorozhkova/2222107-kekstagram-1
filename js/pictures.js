@@ -27,10 +27,10 @@ const closeModal = (evt) => {
     document.removeEventListener('keydown', closeModal);
     bigPictureCancel.removeEventListener('click', closeModal);
     document.removeEventListener('keydown', onModalEscKeydown);
-    socialComments.textContent = '';
-    commentCurrent.textContent = 0;
-    commentsLoader.classList.remove('hidden');
   }
+  socialComments.textContent = '';
+  commentCurrent.textContent = 0;
+  commentsLoader.classList.remove('hidden');
 };
 
 const addComment = (image) => {

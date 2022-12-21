@@ -34,7 +34,7 @@ scaleControlSmaller.addEventListener('click', () => {
     percent = percent - STEP_SCALE;
     scaleControlValue.value = `${percent}%`;
   }
-  imgPreview.style.transform = `scale(${percent / 100})`;
+  imgPreview.setAttribute('style', `transform: scale(${percent / 100})`);
 });
 
 scaleControlBigger.addEventListener('click', () => {
@@ -43,7 +43,7 @@ scaleControlBigger.addEventListener('click', () => {
     percent = percent + STEP_SCALE;
     scaleControlValue.value = `${percent}%`;
   }
-  imgPreview.style.transform = `scale(${percent / 100})`;
+  imgPreview.setAttribute('style', `transform: scale(${percent / 100})`);
 });
 
 const applyChanges = (value) => {
